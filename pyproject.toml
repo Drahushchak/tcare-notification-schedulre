@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "tcare-notification-schedulre"
+version = "0.1.0"
+description = ""
+authors = ["Ihor Drahushchak <dragushhakigor@gmail.com>"]
+readme = "README.md"
+packages = [{include = "tcare_notification_schedulre"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+azure-functions = "^1.15.0"
+pydantic-settings = "^2.0.2"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+mongoengine = "^0.27.0"
+pydantic = "^2.0.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
